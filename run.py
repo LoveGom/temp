@@ -13,7 +13,7 @@ pw = 'asdfasfsdaf' # 비밀번호
 date = datetime.now()
 # 크롬드라이브 불러오기
 while(True):
-    if date.hour == 6
+    if date.hour == 6:
         options = webdriver.ChromeOptions()
         options.add_argument('headless')
         options.add_argument("disable-gpu")
