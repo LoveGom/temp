@@ -8,10 +8,10 @@
 # !!! 본 코드의 라이선스는 MeatRoast 에게 있습니다 !!!
 # 해당 레포지토리 : https://github.com/MeatRoast/health-condition-self-check-Auto-system
 
-
+import time, datetime
 from selenium import webdriver
 from datetime import datetime
-import time, datetime
+
 
 
 def task():
