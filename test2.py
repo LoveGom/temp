@@ -10,18 +10,22 @@
 
 
 from selenium import webdriver
-import time
-def task(a, b, c, d, e, f):
+from datetime import datetime
+import time, datetime
+
+
+def task():
     city = a
     level = b
     school = c
     named = d
-    bh = e # YYMMDD
+    bh = e
     pw = f
+    # 해당 변수의 사용법은 원본 레포지토리를 확인해주세요
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
     options.add_argument("disable-gpu")
-    bb = webdriver.Chrome(executable_path="크롬드라이브 경로", options=options)
+    bb = webdriver.Chrome(executable_path="크롬드라이브 경로", options=options) # !!! 이 친구도 수정 해야 함 !!!
     bb.get("https://hcs.eduro.go.kr/#/loginHome") # 웹 사이트 접속 
     bb.find_element_by_id("btnConfirm2").click() # 자가진단하기 클릭
     bb.find_element_by_xpath('//*[@id="schul_name_input"]').click() #학교찾기 클릭
@@ -56,3 +60,18 @@ def task(a, b, c, d, e, f):
     print(f'{day}') # day값 출력
     print(f'{te}') # te값 출력
     print('자가진단 완료')
+
+while(True):
+    try:
+        date = datetime.now()
+        print(date.hour, date.minute, date.second)
+        if date.hour == 6:
+            print("True")
+            task()
+            time.sleep(300)
+        else:
+            print("False")
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("종료됨")
+        exit()
