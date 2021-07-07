@@ -1,12 +1,12 @@
-# 교육부 건강상태 자가진단 시스템 / 학생자가진단 시스템
-# 해당 소스를 사용하실려면 아래 모듈을 설치해주세요
-# pip install selenium
-# 해당 시스템은 학교검색에 첫번쩨 학교만 할 수 있습니다.
-# 추후 업데이트 해드리겠습니다!
-# 자유롭게 사용이 가능하며 블로그, 카페, 페이스북, SNS 등등 소스코드 업로드, 리뷰 목적 사용 시에는 꼭 GitHub링크 남겨주세요!
-# https://github.com/MeatRoast
-# !!! 본 코드의 라이선스는 MeatRoast 에게 있습니다 !!!
-# 해당 레포지토리 : https://github.com/MeatRoast/health-condition-self-check-Auto-system
+    # 교육부 건강상태 자가진단 시스템 / 학생자가진단 시스템
+    # 해당 소스를 사용하실려면 아래 모듈을 설치해주세요
+    # pip install selenium
+    # 해당 시스템은 학교검색에 첫번쩨 학교만 할 수 있습니다.
+    # 추후 업데이트 해드리겠습니다!
+    # 자유롭게 사용이 가능하며 블로그, 카페, 페이스북, SNS 등등 소스코드 업로드, 리뷰 목적 사용 시에는 꼭 GitHub링크 남겨주세요!
+    # https://github.com/MeatRoast
+    # !!! 본 코드의 라이선스는 MeatRoast 에게 있습니다 !!!
+    # 해당 레포지토리 : https://github.com/MeatRoast/health-condition-self-check-Auto-system
 
 import time, datetime
 from selenium import webdriver
