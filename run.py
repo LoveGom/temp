@@ -65,7 +65,7 @@ while(True):
     try:
         date = datetime.now()
         print(date.hour, date.minute, date.second)
-        if date.hour == 6:
+        if date.hour == 6 and date.minute == 1:
             print("True")
             task()
             time.sleep(300)
